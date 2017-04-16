@@ -10,15 +10,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".register">
+        <activity android:name=".Main.MainStuff.register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Main.MainStuff.LoginActivity" />
+        <activity android:name=".Main.MainStuff.Profile" />
+        <activity android:name=".Main.CategoriesTutorials.Categories" />
+        <activity android:name=".Main.CategoriesTutorials.Repair" />
+        <activity android:name=".Main.CategoriesTutorials.Food" />
+        <activity android:name=".Main.CategoriesTutorials.Clean"></activity>
     </application>
 
 </manifest>
