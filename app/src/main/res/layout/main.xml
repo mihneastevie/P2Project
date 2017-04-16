@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.michael.geoq.register">
+    tools:context="com.example.michael.geoq.Main.MainStuff.register">
 
     <LinearLayout
         android:orientation="vertical"

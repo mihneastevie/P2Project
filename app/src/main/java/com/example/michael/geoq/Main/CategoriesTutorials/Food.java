@@ -1,13 +1,13 @@
-package com.example.michael.geoq;
+package com.example.michael.geoq.Main.CategoriesTutorials;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-public class Profile extends AppCompatActivity {
+import com.example.michael.geoq.R;
+public class Food extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_food);
     }
 }
