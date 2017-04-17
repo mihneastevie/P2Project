@@ -11,6 +11,7 @@
     tools:context="com.example.michael.geoq.Main.CategoriesTutorials.Categories">
 
 
+
     <ImageView
         android:id="@+id/image_viewrepair"
         android:layout_width="50dp"
@@ -78,5 +79,16 @@
         android:layout_alignTop="@+id/buttonFood"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonClean"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonClean"
+        android:background="@android:drawable/ic_input_add"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
 
 </RelativeLayout>

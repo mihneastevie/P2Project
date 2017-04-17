@@ -22,7 +22,8 @@
         <activity android:name=".Main.CategoriesTutorials.Categories" />
         <activity android:name=".Main.CategoriesTutorials.Repair" />
         <activity android:name=".Main.CategoriesTutorials.Food" />
-        <activity android:name=".Main.CategoriesTutorials.Clean"></activity>
+        <activity android:name=".Main.CategoriesTutorials.Clean" />
+        <activity android:name=".Main.MainStuff.Upload_Activity"></activity>
     </application>
 
 </manifest>
