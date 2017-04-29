@@ -87,8 +87,10 @@
         android:layout_alignLeft="@+id/buttonClean"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/buttonClean"
-        android:background="@android:drawable/ic_input_add"
+        android:background="@android:color/holo_blue_dark"
+        android:text="+"
         android:textAllCaps="false"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
