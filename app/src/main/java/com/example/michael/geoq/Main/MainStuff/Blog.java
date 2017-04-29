@@ -9,9 +9,6 @@ public class Blog {
 
         private String desc;
         private String title;
-
-
-
         private  String username;
 
         public Blog(){
