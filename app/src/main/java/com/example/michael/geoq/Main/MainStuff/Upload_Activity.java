@@ -23,6 +23,11 @@ import com.google.firebase.storage.UploadTask;
 
 public class Upload_Activity extends AppCompatActivity {
 
+    private static final String ROOT_PATH="Tutorial_up/";
+    private static final String FOOD_PATH="FOOD";
+    private static final String CLEAN_PATH="CLEAN";
+    private static final String REPAIR_PATH="REPAIR";
+
     private EditText TutName;
     private EditText writeText;
 
@@ -45,7 +50,10 @@ public class Upload_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_upload_);
 
         mStrorage = FirebaseStorage.getInstance().getReference();
-        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/FOOD");
+//        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/FOOD");
+//        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/CLEAN");
+//        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/REPAIR");
+
 
         TutName = (EditText) findViewById(R.id.TutName);
         writeText = (EditText) findViewById(R.id.writeText);
@@ -137,15 +145,23 @@ public class Upload_Activity extends AppCompatActivity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+                    if (cleanCheckBox.isChecked()) {
+                        mDataBase= FirebaseDatabase.getInstance().getReference().child(ROOT_PATH+CLEAN_PATH);
+                    } else if (foodCheckBox.isChecked()) {
+                        mDataBase= FirebaseDatabase.getInstance().getReference().child(ROOT_PATH+FOOD_PATH);
+                    }else if (repairCheckBox.isChecked()){
+                        mDataBase= FirebaseDatabase.getInstance().getReference().child(ROOT_PATH+REPAIR_PATH);
 
+                    }
 
                     @SuppressWarnings("VisibleForTests") Uri downloadUrl = taskSnapshot.getDownloadUrl();
                     DatabaseReference newPost = mDataBase.push();
                     newPost.child("title").setValue(title_val);
                     newPost.child("Desc").setValue(desc_val);
                     newPost.child("image").setValue(downloadUrl.toString());
-
                     mProgress.dismiss();
+
+
 
                     startActivity(new Intent(Upload_Activity.this, Categories.class));
                 }
