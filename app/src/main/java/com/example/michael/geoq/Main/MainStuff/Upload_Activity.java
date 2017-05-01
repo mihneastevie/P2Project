@@ -45,7 +45,7 @@ public class Upload_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_upload_);
 
         mStrorage = FirebaseStorage.getInstance().getReference();
-        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up");
+        mDataBase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/FOOD");
 
         TutName = (EditText) findViewById(R.id.TutName);
         writeText = (EditText) findViewById(R.id.writeText);
@@ -65,6 +65,36 @@ public class Upload_Activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 startPosting();
+            }
+        });
+
+        foodCheckBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (foodCheckBox.isChecked()) {
+                    cleanCheckBox.setChecked(false);
+                    repairCheckBox.setChecked(false);
+
+                }
+            }
+        });
+
+        cleanCheckBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (cleanCheckBox.isChecked()){
+                    foodCheckBox.setChecked(false);
+                    repairCheckBox.setChecked(false);
+                }
+            }
+        });
+        repairCheckBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (repairCheckBox.isChecked()) {
+                    foodCheckBox.setChecked(false);
+                    cleanCheckBox.setChecked(false);
+                }
             }
         });
 
@@ -91,6 +121,7 @@ public class Upload_Activity extends AppCompatActivity {
             UploadPic.setImageURI(mImageUri);
         }
     }
+
 
     private void startPosting() {
         mProgress.setMessage("Posting...");
