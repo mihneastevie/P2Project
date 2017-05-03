@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "956233768949-0qubrh3h1o49jvuhs7lru6a4jlsq14ks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.michael.geoq",
+            "certificate_hash": "ca5f1d84a4a9e7becc2c863a98246b857bcbf8ac"
+          }
+        },
+        {
           "client_id": "956233768949-7a551tq2h8ono3c5s1frdm0fsmjmh18l.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956233768949-7a551tq2h8ono3c5s1frdm0fsmjmh18l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
