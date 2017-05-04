@@ -45,7 +45,7 @@ public class Categories extends AppCompatActivity implements View.OnClickListene
         }
         else if (view == buttonFood) {
             finish();
-            startActivity(new Intent(this, Food.class));
+            startActivity(new Intent(this, FetchTuts.class));
         }
         else if (view == buttonClean) {
             finish();

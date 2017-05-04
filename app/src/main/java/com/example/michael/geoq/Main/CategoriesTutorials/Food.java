@@ -16,6 +16,8 @@ public class Food extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
+
+
 //
 //        foodListView = (ListView) findViewById(R.id.foodListView);
 //        final String[] Values = new String[]{"Tutorail 1", "Tutorial 2", "Tutorial 3"};
@@ -26,7 +28,7 @@ public class Food extends AppCompatActivity {
 //            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //
 //
-//                startActivity(new Intent(Food.this, FoodTuts.class));
+//                startActivity(new Intent(Food.this, FetchTuts.class));
 //
 
 //            }

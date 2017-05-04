@@ -18,22 +18,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <TextView
-            android:text="TextView"
-            android:textAlignment="center"
-            android:layout_width="114dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textViewUserEmail2"
-            android:layout_gravity="center_horizontal"/>
-
-        <Button
-            android:text="Tutorial1"
-            android:layout_width="147dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonTutorial1"
-            android:layout_gravity="center_horizontal"
-            />
-
     </LinearLayout>
 
 </RelativeLayout>

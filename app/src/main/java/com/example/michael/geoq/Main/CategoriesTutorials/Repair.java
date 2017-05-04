@@ -49,7 +49,6 @@ private Button buttonTutorial1;
 //            }
 //        });
 
-        buttonTutorial1 = (Button) findViewById(R.id.buttonTutorial1);
 
         buttonTutorial1.setOnClickListener(this);
 
