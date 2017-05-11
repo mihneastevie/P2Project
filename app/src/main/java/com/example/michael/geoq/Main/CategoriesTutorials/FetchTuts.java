@@ -26,7 +26,7 @@ public class FetchTuts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fetch_tutts);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up");
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Tutorial_up/FOOD");
 
         mTutsList = (RecyclerView) findViewById(R.id.FetchTuts);
         mTutsList.setHasFixedSize(true);
